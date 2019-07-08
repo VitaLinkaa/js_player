@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JS-player!</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slyle.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>JS-player!</h1>
+
+        <video  id="video-player">
+            <source src = "./mp-3/video.mp4" type = 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>   
+        </video>
+
+        <div class="progress">
+            <progress id="progress" value="0" max="100">
+            Текст
+            </progress>
+        </div>
+
+        <div>
+            <p id="out" class="out">0</p>
+        </div>
+  
+        <div class="controls">
+            <div><button id='play'>Play</button></div>
+            <div><button id='pause'>Pause</button></div>
+            <div><button id='stop'>Stop</button></div>
+            <div><button id='up'>Speed Up</button></div>
+            <div><button id='down'>Speed Down</button></div>
+            <div><button id='normal'>Speed Normal</button></div>
+            <div class="input-volume"><input type="range" 
+                class="range" 
+                id='volume'
+                min="0" max="100" value="25">
+            </div>
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
